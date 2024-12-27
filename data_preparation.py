@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Step 1: Load the datasets
-deals_data = pd.read_csv('/Users/peterkihara/Downloads/marketing_funnel_data/olist_closed_deals_dataset.csv')
-leads_data = pd.read_csv('/Users/peterkihara/Downloads/marketing_funnel_data/olist_marketing_qualified_leads_dataset.csv')
+deals_data = pd.read_csv('olist_closed_deals_dataset.csv')
+leads_data = pd.read_csv('olist_marketing_qualified_leads_dataset.csv')
 
 # Step 2: Data Cleaning
 deals_data['won_date'] = pd.to_datetime(deals_data['won_date'], errors='coerce')
